@@ -1,0 +1,15 @@
+Test Case 1:
+Input: name=John Doe, email=john@example.com, feedback=Great system!
+Expected Output: Thank you for your feedback!
+
+Test Case 2:
+Input: name=, email=john@example.com, feedback=Great system!
+Expected Output: All fields are required.
+
+Test Case 3:
+Input: name=Jane, email=invalidemail, feedback=Nice!
+Expected Output: Please enter a valid email address.
+
+Test Case 4:
+Input: name=Jane, email=jane@example.com, feedback=
+Expected Output: All fields are required.
