@@ -1,0 +1,66 @@
+=== Test Case 1 ===
+Input:
+Name: John Doe
+Email: johndoe@example.com
+Age: 25
+
+Expected Output:
+Success message with:
+Name: John Doe
+Email: johndoe@example.com
+Age: 25
+Category: Adult
+File entry: Name: John Doe, Email: johndoe@example.com, Age: 25, Category: Adult
+
+=== Test Case 2 ===
+Input:
+Name: Jane Smith
+Email: janesmith@example.com
+Age: 17
+
+Expected Output:
+Success message with:
+Name: Jane Smith
+Email: janesmith@example.com
+Age: 17
+Category: Underage
+File entry: Name: Jane Smith, Email: janesmith@example.com, Age: 17, Category: Underage
+
+=== Test Case 3 ===
+Input:
+Name: Robert Johnson
+Email: robert@example.com
+Age: 65
+
+Expected Output:
+Success message with:
+Name: Robert Johnson
+Email: robert@example.com
+Age: 65
+Category: Senior
+File entry: Name: Robert Johnson, Email: robert@example.com, Age: 65, Category: Senior
+
+=== Test Case 4 ===
+Input:
+Name: 123Invalid
+Email: invalid-email
+Age: -5
+
+Expected Output:
+Error messages for:
+- Name must contain only alphabets
+- Invalid email format
+- Age must be positive
+Program should continue prompting for valid inputs
+
+=== Test Case 5 ===
+Input:
+Name: Mary O'Connor
+Email: mary.o'connor@example.com
+Age: thirty
+
+Expected Output:
+Error messages for:
+- Name must contain only alphabets (apostrophe may be allowed depending on implementation)
+- Age must be a number
+Program should continue prompting for valid inputs
