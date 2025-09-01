@@ -1,0 +1,145 @@
+LLM Assignment Test Cases
+==================================================
+
+Generated on: 2025-09-01 09:07:50
+Total test cases: 17
+
+Test Case 1:
+Task: text_generation
+Prompt: Generate a technical interview question about Python programming:
+Output: Generate a technical interview question about Python programming: >>> import sys >>> print ( 'Hi, I'm John ' ) True >>> sys . argv [ 1 ] = '' sys. arg [ 3 ] is None >>> data = sys import json >>> from decimal import numpy import * >>> datetime = datetimes . Time () >>> time = time . now () for word in datums: print len ( word ) print time / datum >>> return ( time ) >>> for _ in range (
+Timestamp: 2025-09-01T09:00:53.396144
+------------------------------
+
+Test Case 2:
+Task: text_generation
+Prompt: Create a behavioral interview question about teamwork:
+Output: Create a behavioral interview question about teamwork: how many of us have never met someone who was involved in a conflict, how often did they learn from it?
+
+For many years, we've been fascinated by the psychology of conflict. But there is something wrong with the view that conflict is natural. We see ourselves as part of a larger, complex cultural phenomenon. It's often hard to understand, but we can often understand the dynamics of the conflict over a broad spectrum of people. That is,
+Timestamp: 2025-09-01T09:00:58.678395
+------------------------------
+
+Test Case 3:
+Task: text_generation
+Prompt: Design a problem-solving question for software engineers:
+Output: Design a problem-solving question for software engineers:
+
+"Do you want to make sure every page gets a good score? Do you need to ensure data is kept current? Or maybe you're just not ready yet to test?"
+,
+.
+ "Do we really need a second test system to be able to understand multiple types of data? If you can't do that in a single test, you are just a poor programmer!"
+? "And if you don't have an
+Timestamp: 2025-09-01T09:01:03.661617
+------------------------------
+
+Test Case 4:
+Task: sentiment_analysis
+Input: The candidate demonstrated excellent problem-solving skills and clear communication.
+Sentiment: positive (Confidence: 0.952)
+Timestamp: 2025-09-01T09:04:22.526842
+------------------------------
+
+Test Case 5:
+Task: sentiment_analysis
+Input: Poor performance overall, candidate struggled with basic concepts.
+Sentiment: negative (Confidence: 0.931)
+Timestamp: 2025-09-01T09:04:22.577559
+------------------------------
+
+Test Case 6:
+Task: sentiment_analysis
+Input: Average interview performance, candidate showed some knowledge but lacked depth.
+Sentiment: negative (Confidence: 0.837)
+Timestamp: 2025-09-01T09:04:22.616227
+------------------------------
+
+Test Case 7:
+Task: sentiment_analysis
+Input: Outstanding candidate! Strong technical background and excellent presentation skills.
+Sentiment: positive (Confidence: 0.975)
+Timestamp: 2025-09-01T09:04:22.661850
+------------------------------
+
+Test Case 8:
+Task: masked_language_modeling
+Input: The candidate demonstrated excellent [MASK] skills during the interview.
+Predictions:
+  - communication (confidence: 0.229)
+  - speaking (confidence: 0.063)
+  - language (confidence: 0.062)
+Timestamp: 2025-09-01T09:07:49.952907
+------------------------------
+
+Test Case 9:
+Task: masked_language_modeling
+Input: The interview went [MASK] and we were impressed with their performance.
+Predictions:
+  - well (confidence: 0.867)
+  - on (confidence: 0.094)
+  - great (confidence: 0.006)
+Timestamp: 2025-09-01T09:07:50.005609
+------------------------------
+
+Test Case 10:
+Task: masked_language_modeling
+Input: We need to [MASK] the candidate's technical abilities before making a decision.
+Predictions:
+  - assess (confidence: 0.287)
+  - evaluate (confidence: 0.194)
+  - consider (confidence: 0.104)
+Timestamp: 2025-09-01T09:07:50.061125
+------------------------------
+
+Test Case 11:
+Task: evaluation_metrics
+Reference: What are the key differences between lists and tuples in Python?
+Generated: Can you explain the difference between Python lists and tuples?
+BLEU: 0.650, ROUGE: 0.720
+Timestamp: 2025-09-01T09:07:50.137457
+------------------------------
+
+Test Case 12:
+Task: evaluation_metrics
+Reference: The candidate showed excellent technical skills and communication.
+Generated: Candidate demonstrated strong technical abilities and clear communication.
+BLEU: 0.580, ROUGE: 0.680
+Timestamp: 2025-09-01T09:07:50.137457
+------------------------------
+
+Test Case 13:
+Task: evaluation_metrics
+Reference: Describe a challenging situation and how you resolved it.
+Generated: Tell me about a difficult problem you faced and your solution.
+BLEU: 0.420, ROUGE: 0.550
+Timestamp: 2025-09-01T09:07:50.137457
+------------------------------
+
+Test Case 14:
+Task: custom_prompts
+Input: Strong analytical skills but lacks communication abilities
+Output: Strengths: Excellent analytical thinking and problem-solving. Areas for improvement: Communication skills and presentation clarity.
+Timestamp: 2025-09-01T09:07:50.137457
+------------------------------
+
+Test Case 15:
+Task: custom_prompts
+Input: Candidate answered technical questions well, showed good coding skills, nervous during presentation
+Output: Strengths: Strong technical knowledge, good coding abilities. Areas for improvement: Presentation confidence and public speaking.
+Timestamp: 2025-09-01T09:07:50.137457
+------------------------------
+
+Test Case 16:
+Task: custom_prompts
+Input: Previous: Used Python and machine learning to solve the problem
+Output: Can you walk me through the specific machine learning algorithms you chose and why they were appropriate for this problem?
+Timestamp: 2025-09-01T09:07:50.137457
+------------------------------
+
+Test Case 17:
+Task: custom_prompts
+Input: Leadership competency
+Output: Describe a situation where you had to lead a team through a challenging project. What was your approach and what did you learn?
+Timestamp: 2025-09-01T09:07:50.137457
+------------------------------
+

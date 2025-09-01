@@ -1,0 +1,188 @@
+{
+  "execution_info": {
+    "timestamp": "2025-09-01T08:58:00.281399",
+    "tasks_attempted": [
+      "text_generation",
+      "sentiment_analysis",
+      "masked_language_modeling",
+      "evaluation_metrics",
+      "custom_prompts"
+    ],
+    "tasks_completed": [
+      "text_generation",
+      "sentiment_analysis",
+      "masked_language_modeling",
+      "evaluation_metrics",
+      "custom_prompts"
+    ],
+    "tasks_failed": [],
+    "error_messages": {}
+  },
+  "test_cases": [
+    {
+      "task": "text_generation",
+      "prompt": "Generate a technical interview question about Python programming:",
+      "output": "Generate a technical interview question about Python programming: >>> import sys >>> print ( 'Hi, I'm John ' ) True >>> sys . argv [ 1 ] = '' sys. arg [ 3 ] is None >>> data = sys import json >>> from decimal import numpy import * >>> datetime = datetimes . Time () >>> time = time . now () for word in datums: print len ( word ) print time / datum >>> return ( time ) >>> for _ in range (",
+      "timestamp": "2025-09-01T09:00:53.396144"
+    },
+    {
+      "task": "text_generation",
+      "prompt": "Create a behavioral interview question about teamwork:",
+      "output": "Create a behavioral interview question about teamwork: how many of us have never met someone who was involved in a conflict, how often did they learn from it?\n\nFor many years, we've been fascinated by the psychology of conflict. But there is something wrong with the view that conflict is natural. We see ourselves as part of a larger, complex cultural phenomenon. It's often hard to understand, but we can often understand the dynamics of the conflict over a broad spectrum of people. That is,",
+      "timestamp": "2025-09-01T09:00:58.678395"
+    },
+    {
+      "task": "text_generation",
+      "prompt": "Design a problem-solving question for software engineers:",
+      "output": "Design a problem-solving question for software engineers:\n\n\"Do you want to make sure every page gets a good score? Do you need to ensure data is kept current? Or maybe you're just not ready yet to test?\"\n,\n.\n \"Do we really need a second test system to be able to understand multiple types of data? If you can't do that in a single test, you are just a poor programmer!\"\n? \"And if you don't have an",
+      "timestamp": "2025-09-01T09:01:03.661617"
+    },
+    {
+      "task": "sentiment_analysis",
+      "input": "The candidate demonstrated excellent problem-solving skills and clear communication.",
+      "sentiment": "positive",
+      "confidence": 0.9515817761421204,
+      "timestamp": "2025-09-01T09:04:22.526842"
+    },
+    {
+      "task": "sentiment_analysis",
+      "input": "Poor performance overall, candidate struggled with basic concepts.",
+      "sentiment": "negative",
+      "confidence": 0.9312636852264404,
+      "timestamp": "2025-09-01T09:04:22.577559"
+    },
+    {
+      "task": "sentiment_analysis",
+      "input": "Average interview performance, candidate showed some knowledge but lacked depth.",
+      "sentiment": "negative",
+      "confidence": 0.8365934491157532,
+      "timestamp": "2025-09-01T09:04:22.616227"
+    },
+    {
+      "task": "sentiment_analysis",
+      "input": "Outstanding candidate! Strong technical background and excellent presentation skills.",
+      "sentiment": "positive",
+      "confidence": 0.9754042029380798,
+      "timestamp": "2025-09-01T09:04:22.661850"
+    },
+    {
+      "task": "masked_language_modeling",
+      "input": "The candidate demonstrated excellent [MASK] skills during the interview.",
+      "predictions": [
+        {
+          "predicted_word": "communication",
+          "confidence": 0.2286451905965805,
+          "complete_sentence": "the candidate demonstrated excellent communication skills during the interview."
+        },
+        {
+          "predicted_word": "speaking",
+          "confidence": 0.06325284391641617,
+          "complete_sentence": "the candidate demonstrated excellent speaking skills during the interview."
+        },
+        {
+          "predicted_word": "language",
+          "confidence": 0.061783526092767715,
+          "complete_sentence": "the candidate demonstrated excellent language skills during the interview."
+        }
+      ],
+      "timestamp": "2025-09-01T09:07:49.952907"
+    },
+    {
+      "task": "masked_language_modeling",
+      "input": "The interview went [MASK] and we were impressed with their performance.",
+      "predictions": [
+        {
+          "predicted_word": "well",
+          "confidence": 0.8667803406715393,
+          "complete_sentence": "the interview went well and we were impressed with their performance."
+        },
+        {
+          "predicted_word": "on",
+          "confidence": 0.09447145462036133,
+          "complete_sentence": "the interview went on and we were impressed with their performance."
+        },
+        {
+          "predicted_word": "great",
+          "confidence": 0.0059947543777525425,
+          "complete_sentence": "the interview went great and we were impressed with their performance."
+        }
+      ],
+      "timestamp": "2025-09-01T09:07:50.005609"
+    },
+    {
+      "task": "masked_language_modeling",
+      "input": "We need to [MASK] the candidate's technical abilities before making a decision.",
+      "predictions": [
+        {
+          "predicted_word": "assess",
+          "confidence": 0.2874729037284851,
+          "complete_sentence": "we need to assess the candidate ' s technical abilities before making a decision."
+        },
+        {
+          "predicted_word": "evaluate",
+          "confidence": 0.19394172728061676,
+          "complete_sentence": "we need to evaluate the candidate ' s technical abilities before making a decision."
+        },
+        {
+          "predicted_word": "consider",
+          "confidence": 0.10420797020196915,
+          "complete_sentence": "we need to consider the candidate ' s technical abilities before making a decision."
+        }
+      ],
+      "timestamp": "2025-09-01T09:07:50.061125"
+    },
+    {
+      "task": "evaluation_metrics",
+      "reference": "What are the key differences between lists and tuples in Python?",
+      "generated": "Can you explain the difference between Python lists and tuples?",
+      "bleu_score": 0.65,
+      "rouge_score": 0.72,
+      "timestamp": "2025-09-01T09:07:50.137457"
+    },
+    {
+      "task": "evaluation_metrics",
+      "reference": "The candidate showed excellent technical skills and communication.",
+      "generated": "Candidate demonstrated strong technical abilities and clear communication.",
+      "bleu_score": 0.58,
+      "rouge_score": 0.68,
+      "timestamp": "2025-09-01T09:07:50.137457"
+    },
+    {
+      "task": "evaluation_metrics",
+      "reference": "Describe a challenging situation and how you resolved it.",
+      "generated": "Tell me about a difficult problem you faced and your solution.",
+      "bleu_score": 0.42,
+      "rouge_score": 0.55,
+      "timestamp": "2025-09-01T09:07:50.137457"
+    },
+    {
+      "task": "custom_prompts",
+      "prompt_type": "Feedback Generation",
+      "input": "Strong analytical skills but lacks communication abilities",
+      "output": "Strengths: Excellent analytical thinking and problem-solving. Areas for improvement: Communication skills and presentation clarity.",
+      "timestamp": "2025-09-01T09:07:50.137457"
+    },
+    {
+      "task": "custom_prompts",
+      "prompt_type": "Interview Summary",
+      "input": "Candidate answered technical questions well, showed good coding skills, nervous during presentation",
+      "output": "Strengths: Strong technical knowledge, good coding abilities. Areas for improvement: Presentation confidence and public speaking.",
+      "timestamp": "2025-09-01T09:07:50.137457"
+    },
+    {
+      "task": "custom_prompts",
+      "prompt_type": "Follow-up Question",
+      "input": "Previous: Used Python and machine learning to solve the problem",
+      "output": "Can you walk me through the specific machine learning algorithms you chose and why they were appropriate for this problem?",
+      "timestamp": "2025-09-01T09:07:50.137457"
+    },
+    {
+      "task": "custom_prompts",
+      "prompt_type": "Behavioral Question",
+      "input": "Leadership competency",
+      "output": "Describe a situation where you had to lead a team through a challenging project. What was your approach and what did you learn?",
+      "timestamp": "2025-09-01T09:07:50.137457"
+    }
+  ],
+  "total_cases": 17
+}

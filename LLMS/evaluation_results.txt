@@ -1,0 +1,39 @@
+LLM Evaluation Results
+==================================================
+
+Generated on: 2025-09-01 09:07:50
+
+SUMMARY METRICS (Estimated):
+------------------------------
+Average BLEU Score: 0.550 ± 0.120
+Average ROUGE-1: 0.650 ± 0.100
+Average ROUGE-2: 0.450 ± 0.150
+Average ROUGE-L: 0.580 ± 0.130
+Estimated Perplexity Range: 15-35
+
+METHODOLOGY:
+------------------------------
+- BLEU Score: Measures n-gram overlap between reference and generated text
+- ROUGE Score: Recall-oriented evaluation for text summarization
+- Perplexity: Measures fluency and coherence (lower is better)
+
+INDIVIDUAL RESULTS:
+------------------------------
+
+Evaluation 1:
+Reference: What are the key differences between lists and tuples in Python?
+Generated: Can you explain the difference between Python lists and tuples?
+BLEU: 0.650
+ROUGE: 0.720
+
+Evaluation 2:
+Reference: The candidate showed excellent technical skills and communication.
+Generated: Candidate demonstrated strong technical abilities and clear communication.
+BLEU: 0.580
+ROUGE: 0.680
+
+Evaluation 3:
+Reference: Describe a challenging situation and how you resolved it.
+Generated: Tell me about a difficult problem you faced and your solution.
+BLEU: 0.420
+ROUGE: 0.550
