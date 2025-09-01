@@ -1,0 +1,30 @@
+2025-09-01 11:56:38 - Network error or API timeout: 404 Client Error: Not Found for url: https://api-inference.huggingface.co/models/gpt2
+2025-09-01 11:57:40 - Network error or API timeout: 404 Client Error: Not Found for url: https://api-inference.huggingface.co/models/distilgpt2
+2025-09-01 11:58:23 - Network error or API timeout: 404 Client Error: Not Found for url: https://api-inference.huggingface.co/models/google/flan-t5-base
+2025-09-01 11:59:19 - Network error or API timeout: 404 Client Error: Not Found for url: https://api-inference.huggingface.co/models/google/flan-t5-base
+2025-09-01 12:00:22 - Network error or API timeout: 404 Client Error: Not Found for url: https://api-inference.huggingface.co/models/t5-small
+2025-09-01 12:03:20 - Network error or API timeout: 404 Client Error: Not Found for url: https://api-inference.huggingface.co/models/google/t5gemma-b-b-prefixlm
+2025-09-01 12:10:11 - Google API key is missing. Please set GOOGLE_API_KEY in your environment or .env file.
+2025-09-01 12:12:25 - Network error or API timeout: 404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1/models/text-bison-001:generate?key=AIzaSyBpadOE_ttOqiBBHhmpxl8387lrXzcDs2M
+2025-09-01 12:16:32 - API error: status=404, body=
+2025-09-01 12:26:30 - API error: status=400, body={
+  "error": {
+    "code": 400,
+    "message": "Invalid JSON payload received. Unknown name \"temperature\": Cannot find field.\nInvalid JSON payload received. Unknown name \"maxOutputTokens\": Cannot find field.",
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.BadRequest",
+        "fieldViolations": [
+          {
+            "description": "Invalid JSON payload received. Unknown name \"temperature\": Cannot find field."
+          },
+          {
+            "description": "Invalid JSON payload received. Unknown name \"maxOutputTokens\": Cannot find field."
+          }
+        ]
+      }
+    ]
+  }
+}
+
