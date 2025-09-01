@@ -2,5 +2,179 @@
 {% block title %}Home - VMIS{% endblock %}
 {% block content %}
 <h1>Welcome to the Visa Mock Interview System (VMIS)</h1>
-<p>Prepare for your visa interview with realistic mock sessions, instant feedback, and performance summaries.</p>
+<p>Prepare for your visa interview with realistic mock sessions, instant feedback, and performance summaries powered by advanced AI technology.</p>
+
+<div class="features-overview">
+    <h2>🚀 New AI-Powered Features</h2>
+    <div class="features-grid">
+        <div class="feature-card">
+            <h3>🤖 Smart Question Generator</h3>
+            <p>Generate customized interview questions based on specific topics and difficulty levels using advanced AI.</p>
+            <a href="/llm/generate_questions" class="btn btn-primary">Try Now</a>
+        </div>
+        
+        <div class="feature-card">
+            <h3>📊 Intelligent Feedback</h3>
+            <p>Get detailed, constructive feedback on your performance with AI-powered analysis and recommendations.</p>
+            <a href="/llm/generate_feedback" class="btn btn-primary">Get Feedback</a>
+        </div>
+        
+        <div class="feature-card">
+            <h3>📝 Session Summarizer</h3>
+            <p>Transform your interview notes into professional summaries with key insights and action items.</p>
+            <a href="/llm/summarize_session" class="btn btn-primary">Summarize</a>
+        </div>
+    </div>
+</div>
+
+<div class="getting-started">
+    <h2>🎯 How to Get Started</h2>
+    <ol>
+        <li><strong>Explore AI Features:</strong> Visit our <a href="/llm/features">LLM Features</a> page to see all available tools</li>
+        <li><strong>Generate Questions:</strong> Create tailored interview questions for practice sessions</li>
+        <li><strong>Practice & Record:</strong> Conduct mock interviews and take detailed notes</li>
+        <li><strong>Get AI Feedback:</strong> Use our feedback generator to improve your performance</li>
+        <li><strong>Review Summaries:</strong> Generate professional summaries of your sessions</li>
+    </ol>
+</div>
+
+<div class="traditional-features">
+    <h2>📋 Traditional Features</h2>
+    <ul>
+        <li><a href="/feedback">Manual Feedback System</a> - Submit and view traditional feedback</li>
+        <li>User Management - Create and manage candidate profiles</li>
+        <li>Interview Tracking - Monitor progress and improvements</li>
+    </ul>
+</div>
+
+<style>
+.features-overview {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+}
+
+.features-overview h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.feature-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.feature-card p {
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.feature-card .btn {
+    background: white;
+    color: #667eea;
+    border: none;
+    font-weight: bold;
+}
+
+.feature-card .btn:hover {
+    background: #f8f9fa;
+    transform: scale(1.05);
+}
+
+.getting-started {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.getting-started h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.getting-started ol {
+    padding-left: 1.5rem;
+}
+
+.getting-started li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.traditional-features {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 2rem 0;
+}
+
+.traditional-features h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.traditional-features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.traditional-features li {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.traditional-features li:last-child {
+    border-bottom: none;
+}
+
+.traditional-features a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.traditional-features a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .features-overview,
+    .getting-started,
+    .traditional-features {
+        margin: 1rem 0;
+        padding: 1.5rem;
+    }
+}
+</style>
 {% endblock %}

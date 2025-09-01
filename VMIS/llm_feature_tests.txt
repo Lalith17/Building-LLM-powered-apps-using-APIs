@@ -1,0 +1,82 @@
+
+LLM Feature Tests - VMIS
+========================
+Test Date: 2025-09-01 15:42:41
+
+This file contains the results of testing the LLM-powered features
+implemented in the Visa Mock Interview System (VMIS).
+
+FEATURES TESTED:
+1. Dynamic Question Generation (/llm/generate_questions)
+2. Feedback Generation (/llm/generate_feedback) 
+3. Session Summarization (/llm/summarize_session)
+4. Input Validation for all features
+5. Error handling scenarios
+
+TEST CATEGORIES:
+- Input Validation Tests
+- LLM Function Integration Tests
+- Edge Case and Error Handling Tests
+
+
+RESULTS SUMMARY:
+===============
+Total Tests Run: 22
+Tests Passed: 20
+Tests Failed: 2
+Success Rate: 90.9%
+
+DETAILED RESULTS:
+================
+[PASS] Valid topic: 'communication skills'
+[PASS] Valid topic: 'problem-solving'
+[PASS] Valid topic: 'technical knowledge'
+[PASS] Valid topic: 'Leadership and teamwork'
+[PASS] Valid topic: 'Career goals123'
+[PASS] Invalid topic: '...' should fail
+[PASS] Invalid topic: 'A...' should fail
+[PASS] Invalid topic: 'AAAAAAAAAAAAAAAAAAAA...' should fail
+[PASS] Invalid topic: 'topic@#$%...' should fail
+[PASS] Invalid topic: '   ...' should fail
+[PASS] Valid performance notes (length: 78)
+[PASS] Valid performance notes (length: 100)
+[PASS] Invalid performance notes (length: 0) should fail
+[PASS] Invalid performance notes (length: 5) should fail
+[PASS] Invalid performance notes (length: 2001) should fail
+[FAIL] Generate questions - success
+   Details: Unexpected response format
+[FAIL] Generate feedback - success
+   Details: Unexpected response format
+[PASS] Generate summary - success
+   Details: Generated summary with 1019 characters
+[PASS] Generate summary - content check
+   Details: Expected substantial summary, got 1019 characters
+[PASS] Special characters in topic
+   Details: Function should return either success or error response
+[PASS] Maximum length performance notes
+   Details: Validation passed correctly
+[PASS] Minimum valid performance notes
+   Details: Validation passed correctly
+
+FAILED TESTS SUMMARY:
+====================
+- Generate questions - success: Unexpected response format
+- Generate feedback - success: Unexpected response format
+
+TEST ENVIRONMENT:
+================
+- Python Version: 3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]
+- Test Framework: Custom test runner
+- LLM Service: Google Gemini API
+- Features: Question Generation, Feedback Generation, Session Summary
+
+NOTES:
+======
+- All tests validate both successful operations and error handling
+- Input validation ensures data integrity and security
+- LLM API integration includes proper error handling and logging
+- Tests cover edge cases including maximum/minimum input lengths
+- Network connectivity required for LLM API tests
+
+END OF TEST REPORT
+==================
